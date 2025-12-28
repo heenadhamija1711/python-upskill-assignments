@@ -28,10 +28,12 @@ print(squares)
 # matrix = [[1, 3, 4], [23, 32, 56, 74], [-2, -6, -9]]
 # #Expected output : [1, 3, 4, 23, 32, 56, 74, -2, -6, -9]
 matrix = [[1, 3, 4], [23, 32, 56, 74], [-2, -6, -9]]
+flattened=[]
+for sublist in matrix:
+    for item in sublist:
+        flattened.append(item)
 
-flattened = [item for sublist in matrix for item in sublist]
 print(flattened)
-
 
 # Given two lists, keys = ['a', 'b', 'c'] and values = [1, 2, 3], create a dictionary using dictionary comprehension.
 # #Expected output : {'a': 1, 'b': 2, 'c': 3}
